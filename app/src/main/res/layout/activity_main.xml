@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSimpleNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSimpleNotificationPressed"
+        android:text="SIMPLE NOTIFICATION"
+        app:layout_constraintBottom_toTopOf="@+id/btnProgressNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnProgressNotification"
+        android:onClick="onProgressNotificationPressed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROGRESS NOTIFICATION"
+        app:layout_constraintBottom_toTopOf="@+id/btnActionNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSimpleNotification" />
+
+    <Button
+        android:id="@+id/btnActionNotification"
+        android:onClick="onActionNotificationPressed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTION NOTIFICATION"
+        app:layout_constraintBottom_toTopOf="@+id/btnGroupNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProgressNotification" />
+
+    <Button
+        android:id="@+id/btnGroupNotification"
+        android:onClick="onGroupNotificationPressed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GROUP NOTIFICATION"
+        app:layout_constraintBottom_toTopOf="@+id/btnExpandableNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnActionNotification" />
+
+    <Button
+        android:id="@+id/btnExpandableNotification"
+        android:onClick="onExpandableNotificationPressed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXPANDABLE NOTIFICATION"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGroupNotification" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
